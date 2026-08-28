@@ -1,0 +1,39 @@
+:root {
+    --color-background: #f0f4ff;
+    --color-surface: #ffffff;
+    --color-task: #f0fcfb;
+
+    --color-todo: #dbeafe;
+    --color-doing: #fef3c7;
+    --color-done: #d1fae5;
+    --color-danger: #ef4444;
+
+    --color-icon-todo: #2563eb;
+    --color-icon-doing: #d97706;
+    --color-icon-done: #16a34a;
+
+    --color-danger-hover: #ff0f0f;
+    --color-danger-bg: #fee2e2;
+    --color-primary-hover: #bbd2f0;
+
+    --font-family: system-ui, sans-serif;
+
+    --font-size-xs: 12px;
+    --font-size-s: 14px;
+    --font-size-m: 16px;
+    --font-size-l: 20px;
+    --font-size-xl: 24px;
+    --font-size-xxl: 28px;
+    
+    --spacing-xs: 4px;
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 20px;
+    --spacing-xl: 24px;
+
+    --radius-xs: 8px;
+    --radius-s: 10px;
+    --radius-m: 12px;
+    --radius-l: 14px;
+    --radius-xl: 16px;
+}

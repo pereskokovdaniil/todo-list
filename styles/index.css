@@ -1,0 +1,256 @@
+@import url("./variables.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--color-background);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-s);
+}
+
+i {
+    margin-right: var(--spacing-xs);    
+}
+
+h1 {
+    font-size: var(--font-size-xxl);
+}
+
+h2 {
+    margin-bottom: var(--spacing-xs);
+    font-size: var(--font-size-xl);       
+}
+
+.container {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-m);
+    max-width: 1200px;
+    width: 100%;
+    padding: var(--spacing-m);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board {
+    display: flex;
+    gap: var(--spacing-xl);
+    width: 100%;
+}
+
+.column {
+    padding: var(--spacing-m);
+    border-radius: var(--radius-s);
+    min-height: 500px;
+    flex: 1;
+    overflow: hidden;
+}
+
+.todo {
+    background-color: var(--color-todo);
+}
+.doing {
+    background-color: var(--color-doing);
+}
+.done {
+    background-color: var(--color-done);
+}
+
+.add-task {
+    background-color: var(--color-background);
+    border-radius: var(--radius-l);
+    display: flex;
+    gap: var(--spacing-xl);
+    width: 100%;
+    height: 75px;
+    padding: var(--spacing-s);
+    margin: var(--spacing-s);
+    align-items: center;
+}
+
+#taskInput {
+    display: block;
+    background-color: var(--color-surface);
+    border-radius: var(--radius-l);
+    padding: var(--spacing-m);
+    width: 80%;
+    min-width: 300px;
+    max-width: 1000px;
+    height: 50px;
+    font-size: var(--font-size-l);
+}
+
+.statistics {
+    background-color: var(--color-background);
+    border-radius: var(--radius-l);
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    gap: var(--spacing-xl);
+    padding: var(--spacing-m);
+    margin: var(--spacing-s);
+}
+
+.stat-item {
+    display: block;
+    flex: 1;
+}
+
+.todo i {
+    color: var(--color-icon-todo);
+}
+.doing i {
+    color: var(--color-icon-doing);
+}
+.done i {
+    color: var(--color-icon-done);
+}
+
+#clearBtn, #addBtn {
+    border-radius: var(--radius-l);
+    border: none;
+    display: block;
+    width: 200px;
+    height: 50px;
+    transition: 0.5s;
+    font-size: var(--font-size-l);
+}
+
+#clearBtn {
+    margin-top: var(--spacing-s);
+    background-color: var(--color-background);
+    color: var(--color-danger);
+}
+#clearBtn:hover {
+    background-color: var(--color-danger-bg);
+    color: var(--color-danger-hover);
+    transition: 0.5s;
+}
+
+#addBtn {
+    background-color: var(--color-surface);
+}
+#addBtn:hover {
+    background-color: var(--color-primary-hover);
+    transition: 0.5s;
+}
+
+.task-item {
+    background-color: var(--color-task);
+    border-radius: var(--radius-s);
+    padding: var(--spacing-s);
+    margin-top: var(--spacing-s);
+}
+
+.task-text {
+    display: block;
+    margin-top: var(--spacing-s);
+    margin-bottom: var(--spacing-s);
+    font-size: var(--font-size-l);
+    overflow-wrap: break-word;
+}
+
+.task-date {
+    opacity: 0.7;
+    margin-bottom: var(--spacing-xs);
+    font-size: var(--font-size-xs);
+}
+
+.task-btn {
+    padding: var(--spacing-xs) var(--spacing-l);
+    border-radius: var(--radius-m);
+}
+
+.task-btn i {
+    margin: 0;
+}
+
+.task-buttons {
+    margin-top: var(--spacing-xs);
+    display: flex;
+    gap: var(--spacing-m);
+}
+
+
+@media (max-width: 1200px) {
+    .board {
+    gap: var(--spacing-s);
+    }
+
+    #addBtn, #clearBtn, #taskInput {
+        font-size: var(--font-size-m);
+        height: 40px;
+    }
+
+    h2 {
+        font-size: var(--font-size-l);        
+    }
+
+    .task-text {
+    font-size: var(--font-size-m);        
+    }
+
+    .add-task {
+        gap: var(--spacing-m);
+    }
+}
+
+@media (max-width: 900px) {
+    #addBtn, #clearBtn, #taskInput {
+        font-size: var(--font-size-s);
+        height: 35px;
+    }
+
+    h2 {
+        font-size: var(--font-size-m);        
+    }
+
+    .add-task {
+        gap: var(--spacing-s);
+    }
+
+    .task-buttons {
+        gap: var(--spacing-xs);
+    }
+}
+
+@media (max-width: 760px) {
+    .board {
+        flex-direction: column;
+        gap: var(--spacing-s);
+    }
+
+    .column {
+        min-height: 200px;
+        overflow: hidden;
+    }
+
+    #taskInput {
+        min-width: 200px;
+    }
+
+    .add-task {
+        gap: var(--spacing-s);
+        height: 50px;
+    }
+
+}
+
+@media (max-width: 520px) {
+    .stat-item {
+        font-size: var(--font-size-xs);
+    }
+
+    .add-task {
+        margin: 0;
+    }
+}

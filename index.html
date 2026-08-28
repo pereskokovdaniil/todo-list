@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="./images/calendar.png" type="image/png">
+    <title>ToDo List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Мои задачи</h1>
+
+        <div class="add-task">
+        <input type="text" placeholder="Введите задачу" id="taskInput" autofocus>
+        <button id="addBtn" type="button"><i class="fa-solid fa-plus"></i>Добавить</button>
+        </div>
+
+        <div class="statistics">
+            <span class="stat-item">Всего: <span id="totalCount">0</span></span>
+            <span class="stat-item">В процессе: <span id="doingCount">0</span></span>
+            <span class="stat-item">Выполнено: <span id="doneCount">0</span></span>
+        </div>
+
+        <div class="board">
+            <div class="column todo" data-status="todo">
+                <h2><i class="fa-solid fa-clipboard"></i>Планы</h2><hr>
+                <div id="todoList" class="task-list"></div>
+            </div>
+            <div class="column doing" data-status="doing">
+                <h2><i class="fa-solid fa-arrows-rotate"></i>Делаю</h2><hr>
+                <div id="doingList" class="task-list"></div>
+            </div>
+            <div class="column done" data-status="done">
+                <h2><i class="fa-solid fa-check"></i>Выполнено</h2><hr>
+                <div id="doneList" class="task-list"></div>
+            </div>
+        </div>
+
+        <button id="clearBtn" type="button"><i class="fa-solid fa-trash"></i>Очистить все</button>
+    </div>
+
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
