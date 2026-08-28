@@ -15,3 +15,11 @@
 
 ## Адаптивность
 Поддерживаются все устройства с шириной экрана от 375px.
+
+## Ссылка на сайт
+[pereskokovdaniil.github.io/todo-list](https://pereskokovdaniil.github.io/todo-list/)
+
+## Запустить локально
+```bash
+git clone https://github.com/pereskokovdaniil/todo-list.git
+cd todo-list
