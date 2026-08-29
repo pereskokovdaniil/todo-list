@@ -1,6 +1,7 @@
 /**
  * Отрисовка интерфейса
  */
+
 import { tasks } from './storage.js';
 import { moveTask, deleteTask } from './actions.js';
 

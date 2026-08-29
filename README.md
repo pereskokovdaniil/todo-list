@@ -14,7 +14,7 @@
 - localStorage
 
 ## Адаптивность
-Поддерживаются все устройства с шириной экрана от 375px.
+Поддерживаются все устройства с шириной экрана от 360px.
 
 ## Ссылка на сайт
 [pereskokovdaniil.github.io/todo-list](https://pereskokovdaniil.github.io/todo-list/)

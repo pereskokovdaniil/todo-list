@@ -42,6 +42,7 @@ export function clearAll() {
  * Перемещает задачу в новый статус
  * @param {number} id - Уникальный идентификатор задачи
  * @param {string} newStatus - Новый статус задачи
+ * @returns {void}
  */
 export function moveTask(id, newStatus) {
     for (let item = 0; item < tasks.length; item++) {
@@ -58,6 +59,7 @@ export function moveTask(id, newStatus) {
 /**
  * Удаляет задачу по уникальному идентификатору
  * @param {number} id - Уникальный идентификатор задачи
+ * @returns {void}
  */
 export function deleteTask(id) {
     for (let item = 0; item < tasks.length; item++) {

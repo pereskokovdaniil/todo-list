@@ -22,6 +22,7 @@ i {
 
 h1 {
     font-size: var(--font-size-xxl);
+    margin-bottom: var(--spacing-s);
 }
 
 h2 {
@@ -34,7 +35,7 @@ h2 {
     border-radius: var(--radius-m);
     max-width: 1200px;
     width: 100%;
-    padding: var(--spacing-m);
+    padding: var(--spacing-s);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,14 +96,14 @@ h2 {
     width: 100%;
     height: 50px;
     align-items: center;
-    gap: var(--spacing-xl);
-    padding: var(--spacing-m);
+    justify-content: center;
+    gap: 200px;
+    padding: var(--spacing-s);
     margin: var(--spacing-s);
 }
 
 .stat-item {
     display: block;
-    flex: 1;
 }
 
 .todo i {
@@ -221,9 +222,13 @@ h2 {
     .task-buttons {
         gap: var(--spacing-xs);
     }
+
+    .statistics {
+        gap: 75px;
+    }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 780px) {
     .board {
         flex-direction: column;
         gap: var(--spacing-s);
@@ -243,6 +248,13 @@ h2 {
         height: 50px;
     }
 
+    .task-btn {
+        padding: var(--spacing-s) var(--spacing-xl);
+    }
+
+    .task-buttons {
+        gap: var(--spacing-xl);
+    }
 }
 
 @media (max-width: 520px) {
@@ -250,7 +262,16 @@ h2 {
         font-size: var(--font-size-xs);
     }
 
+    .statistics {
+        gap: 30px;
+    }
+
     .add-task {
         margin: 0;
+    }
+
+    #addBtn, #clearBtn, #taskInput {
+        font-size: var(--font-size-xs);
+        height: 35px;
     }
 }
