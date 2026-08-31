@@ -131,18 +131,9 @@ h2 {
     background-color: var(--color-background);
     color: var(--color-danger);
 }
-#clearBtn:hover {
-    background-color: var(--color-danger-bg);
-    color: var(--color-danger-hover);
-    transition: 0.5s;
-}
 
 #addBtn {
     background-color: var(--color-surface);
-}
-#addBtn:hover {
-    background-color: var(--color-primary-hover);
-    transition: 0.5s;
 }
 
 .task-item {
@@ -181,6 +172,19 @@ h2 {
     gap: var(--spacing-m);
 }
 
+
+@media (hover: hover) {
+    #addBtn:hover {
+        background-color: var(--color-primary-hover);
+        transition: 0.5s;
+    }
+
+    #clearBtn:hover {
+        background-color: var(--color-danger-bg);
+        color: var(--color-danger-hover);
+        transition: 0.5s;
+    }
+}
 
 @media (max-width: 1200px) {
     .board {
