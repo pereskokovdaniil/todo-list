@@ -56,7 +56,7 @@ export function render() {
         if (task.status === 'todo') {
             const btnStart = document.createElement('button');
             btnStart.className = 'task-btn';
-            btnStart.innerHTML = '<i class="fa-solid fa-play"></i>';
+            btnStart.innerHTML = '<i class="fa-solid fa-forward"></i>';
             btnStart.onclick = function() {
                 moveTask(task.id, 'doing');
             }
@@ -64,7 +64,7 @@ export function render() {
         } else if (task.status === 'doing') {
             const btnBack = document.createElement('button');
             btnBack.className = 'task-btn';
-            btnBack.innerHTML = '<i class="fa-solid fa-left-long"></i>';
+            btnBack.innerHTML = '<i class="fa-solid fa-backward"></i>';
             btnBack.onclick = function() {
                 moveTask(task.id, 'todo');
             }
@@ -72,7 +72,7 @@ export function render() {
 
             const btnDone = document.createElement('button');
             btnDone.className = 'task-btn';
-            btnDone.innerHTML = '<i class="fa-solid fa-check"></i>';
+            btnDone.innerHTML = '<i class="fa-solid fa-forward"></i>';
             btnDone.onclick = function() {
                 moveTask(task.id, 'done');
             }
