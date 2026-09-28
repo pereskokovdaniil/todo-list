@@ -23,3 +23,7 @@
 ```bash
 git clone https://github.com/pereskokovdaniil/todo-list.git
 cd todo-list
+```
+
+## Автор
+[pereskokovdaniil](https://github.com/pereskokovdaniil)
